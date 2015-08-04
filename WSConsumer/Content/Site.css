@@ -1,0 +1,102 @@
+﻿
+    body{
+    line-height:1;
+    font: 14px/23px 'PT Sans', sans-serif;
+    color: #666;
+    background:white;
+    background-color: white;
+    background-image: url("images/cbg.png");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    }
+
+.jumbotron {
+    position: relative;
+    float: left;
+    width: 100%;
+    z-index: 99;
+    background-image: url("images/hbg.gif");
+    border-bottom: 7px solid rgb(94, 94, 94);
+        border-bottom-width: 7px;
+        border-bottom-style: solid;
+        border-bottom-color: rgb(94, 94, 94);
+}
+
+.Jumbotron-inner {
+    padding-left: 40px;
+}
+
+.Block_Wrapper{
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow:  0 5px 8px rgba(0,0,0,0.5);
+}
+
+.Wrapper {
+    padding: 20px;
+}
+
+
+#Right_Block {
+    padding: 15px;
+}
+
+.divTable
+    {
+        display:table;
+        width:100%;
+    }
+
+    .divRow
+    {
+       display:table-row;
+       width:auto;
+       
+    }
+
+    .divCell
+    {
+        background-color: rgb(247, 251, 254);
+        padding: 5px;
+        outline: thin solid;
+        outline-color: grey;
+        float:left;
+        display:table-cell;
+        width: 25%;
+        height: 30px;
+        text-align : center;
+    }
+
+    div[class="divCell"]:hover
+    {
+        background-color: #6bfffa; 
+    }
+    
+    .innerTable {
+        height: 10px;
+        padding: 10px;
+       -webkit-box-shadow: inset 0px 8px 9px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 8px 9px -5px rgba(0,0,0,0.75);
+box-shadow: inset 0px 8px 9px -5px rgba(0,0,0,0.75);
+        width:100%;
+    }
+
+    button, h4  {
+        display: inline-block; 
+      vertical-align: central;
+    }
+
+    .btn-lg {
+       margin-left: 20px;
+    }
+
+    .list-group {
+        margin-top: 20px;
+    }
+

@@ -1,0 +1,93 @@
+﻿@using System.Web.Optimization
+@{
+    Layout = null;
+}
+
+    <!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>WebServiceConsumer</title>
+    <link href="@BundleTable.Bundles.ResolveBundleUrl("~/bundles/css")" rel="stylesheet" type="text/css"/>
+    <link href="@BundleTable.Bundles.ResolveBundleUrl("~/bundles/bootstrap")" rel="stylesheet" />
+    <script src='@Scripts.Url("~/bundles/js")'> </script>
+    
+</head>
+<body>
+    
+<div class="row">
+    <div class="jumbotron">
+        <div class="Jumbotron-inner">
+            <h2>Welcome to Web Service Consumer!</h2>
+        </div>
+    </div>
+    <div class="Wrapper">
+        <div class="col-sm-12 col-md-6">
+            <div class="Block_Wrapper" id="Left_Block">
+                <h4><b>Which bus are you looking for?</b></h4>
+                <div class="divTable">
+                    <div class="divRow">
+                        <div class="divCell" onclick=" tableFiller(50) ">1-50</div>
+                        <div class="divCell" onclick=" tableFiller(100) ">51-100</div>
+                        <div class="divCell" onclick=" tableFiller(150) ">101-150</div>
+                        <div class="divCell" onclick=" tableFiller(200) ">151-200</div>
+                    </div>
+                    <div id="2">
+                    </div>
+                    <div class="divRow">
+                        <div class="divCell" onclick=" tableFiller(250) ">201-250</div>
+                        <div class="divCell" onclick=" tableFiller(300) ">251-300</div>
+                        <div class="divCell" onclick=" tableFiller(350) ">301-350</div>
+                        <div class="divCell" onclick=" tableFiller(400) ">351-400</div>
+                    </div>
+                    <div id="4"></div>
+                    <div class="divRow">
+                        <div class="divCell" onclick=" tableFiller(450) ">401-450</div>
+                        <div class="divCell" onclick=" tableFiller(500) ">451-500</div>
+                        <div class="divCell" onclick=" tableFiller(550) ">501-550</div>
+                        <div class="divCell" onclick=" tableFiller(600) ">551-600</div>
+                    </div>
+                    <div id="6"></div>
+                    <div class="divRow">
+                        <div class="divCell" onclick=" tableFiller(650) ">601-650</div>
+                        <div class="divCell" onclick=" tableFiller(700) ">651-700</div>
+                        <div class="divCell" onclick=" tableFiller(750) ">701-750</div>
+                        <div class="divCell" onclick=" tableFiller(800) ">751-800</div>
+                    </div>
+                    <div id="8"></div>
+                    <div class="divRow">
+                        <div class="divCell" onclick=" tableFiller(850) ">801-850</div>
+                        <div class="divCell" onclick=" tableFiller(900) ">851-900</div>
+                        <div class="divCell" onclick=" tableFiller(950) ">901-950</div>
+                        <div class="divCell" onclick=" tableFiller(1000) ">951-1000</div>
+                    </div>
+                    <div id="10"></div>
+                    <div class="divRow">
+                        <div class="divCell" onclick=" tableFiller('A-F') ">A-F</div>
+                        <div class="divCell" onclick=" tableFiller('G-L') ">G-L</div>
+                        <div class="divCell" onclick=" tableFiller('M-Q') ">M-Q</div>
+                        <div class="divCell" onclick=" tableFiller('R-Z') ">R-Z</div>
+                    </div>
+                    <div id="A-Z"></div>
+                </div>
+            </div>
+        </div>
+        <div class=" col-sm-12 col-md-6">
+            <div class="Block_Wrapper" id="Right_Block">
+                <div id="hiddenStops">
+                    <h2>Bus stops</h2>
+                    <h4 id="DirectionP"></h4><button class=" btn btn-lg btn-info" onclick=" routeMarkupGen('outbound') ">Change direction</button>
+                    <ul class="list-group">
+                    </ul>
+                </div >
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+
+</html>
+
